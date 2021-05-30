@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Lulu';
+  src: local('Lulu'),
+    url(~assets/Lulu/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf)
+      format('truetype');
+
+}
+
+@font-face {
+ font-family: 'Avenir';
+  src: local('Avenir'),
+    url(~assets/Avenir/Avenir-LT-35-Light.ttf)
+      format('truetype');
+}
