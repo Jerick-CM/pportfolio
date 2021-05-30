@@ -186,7 +186,7 @@
 
                 <v-col class="text-center col-sm-6 col-8 font-avenir">
                   <p for="" class="fs-1-1 white--text text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Internet is the world audience.
                   </p>
                   <p for="" class="fs-1-1 white--text text-justify">
                     Donec scelerisque eros vel tellus tempor, quis iaculis orci ultrices.
