@@ -20,7 +20,7 @@
                 'fs-0-5': $vuetify.breakpoint.smAndDown,
                 'fs-1-0': $vuetify.breakpoint.mdAndUp,
               }"
-              >[ Center for Humane Technology ]
+              >[ Technology R&D ]
             </label>
           </v-col>
         </v-row>
@@ -64,7 +64,7 @@
                 color="primary"
                 :size="{
                   '150': $vuetify.breakpoint.smAndDown,
-                  '375': $vuetify.breakpoint.mdAndUp,
+                  '350': $vuetify.breakpoint.mdAndUp,
                 }"
                 class="text-center"
               >
@@ -100,6 +100,7 @@
               v-for="(item, i) in para"
               :key="i"
             >
+
               {{ item.phrase }}
             </p>
           </v-col>
@@ -196,11 +197,11 @@ export default {
       { phrase: 'Big brains with no life ORGATE No brains with slack life. ' },
       {
         phrase:
-          'Nobody warns the world community that passwords cannot be used the same for every website you register, using the same password for sites you trust makes you become vulnerable from being hacked ',
+          'Nobody warns the world community that passwords cannot be used the same for every website you register, using the same password for sites you trust makes you become vulnerable from being hacked.',
       },
       {
         phrase:
-          "Raise your hand if you've been coding while wathing or just listening to a movie or tv series ",
+          "Raise your hand if you've been coding while waiting or just listening to a movie or tv series.",
       },
       {
         phrase:
@@ -210,17 +211,17 @@ export default {
     ],
     quotes: [
       {
-        phrase: 'nothing ever go smoothly at the first time with programming ',
+        phrase: 'Nothing ever go smoothly at the first time with programming.',
       },
       { phrase: 'Hard work is the sum of daily efforts. ' },
-      { phrase: 'Strength is built in weakness.  - sand chronicles ' },
+      { phrase: 'Strength is built in weakness.  - sand chronicles.' },
       {
         phrase:
           "Don't fight what we hate, save what we love  - star wars the last jedi. ",
       },
       { phrase: "Knowledge isn't always power, sometimes it is a burden ." },
       { phrase: 'The future is Open.' },
-      { phrase: 'Faith in others is often misplaced' },
+      { phrase: 'Faith in others is often misplaced.' },
       {
         phrase:
           'In web development it really necessary to learn from the best.',
