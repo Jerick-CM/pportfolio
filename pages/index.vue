@@ -94,37 +94,13 @@
       <v-container class="">
         <v-row no-gutters class="mt-5">
           <v-col cols="12" sm="12" lg="12">
-            <p for="" class="fs-1-1 white--text text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum in tellus consequat, faucibus massa quis, tempor
-              tortor. Ut gravida nulla ante, nec mattis orci molestie in. Nunc
-              iaculis eget mi eu elementum. Nam in luctus purus. Curabitur ut
-              purus convallis, rhoncus metus porta, tempus risus. Cras semper
-              ultrices massa, a tempus ante congue ut. Donec cursus semper
-              placerat. Quisque luctus, enim vel suscipit fermentum, arcu quam
-              ultricies ligula, id rutrum urna enim eu justo. Fusce venenatis
-              fringilla turpis. Etiam nec quam arcu. Mauris eleifend turpis a
-              condimentum dictum. Donec quis urna eu tortor efficitur semper non
-              non ex. Nulla interdum aliquet tortor, eu vulputate lectus
-              molestie eget. Nulla a purus nec nulla interdum vehicula in
-              tincidunt purus. Ut ullamcorper, odio vitae egestas laoreet, augue
-              nibh condimentum quam, eu finibus erat magna non metus. Nullam
-              fringilla feugiat ante, et semper tellus luctus sed. Nam nisl
-              erat, pulvinar vitae sem ac, scelerisque pulvinar justo.
-              Pellentesque vitae dui enim. In hac habitasse platea dictumst.
-              Pellentesque porta velit et leo vehicula, sit amet dictum lorem
-              tincidunt. Morbi mollis leo odio, et iaculis dui pretium ac. In
-              sit amet eros ut diam sodales ullamcorper sit amet quis tellus.
-              Sed eget aliquet erat. Pellentesque eget ipsum velit. Pellentesque
-              iaculis nisi id eleifend mattis. Sed accumsan mollis eleifend.
-              Aliquam sit amet lectus bibendum, lacinia metus quis, bibendum
-              diam. Praesent odio sem, bibendum non porta quis, hendrerit nec
-              elit. Quisque eget arcu nulla. In vestibulum mauris vitae eros
-              semper, id dapibus metus feugiat. Aliquam ornare, sapien at
-              feugiat facilisis, libero nisi semper urna, quis porttitor nunc
-              sem in justo. Etiam at sapien accumsan, convallis ligula ac,
-              ultrices orci. Nunc iaculis nibh ipsum, at varius magna feugiat
-              quis.
+            <p
+              for=""
+              class="fs-1-1 white--text text-justify"
+              v-for="(item, i) in para"
+              :key="i"
+            >
+              {{ item.phrase }}
             </p>
           </v-col>
         </v-row>
@@ -158,19 +134,13 @@
             </v-layout>
           </v-col>
           <v-col cols="12" sm="12" lg="8">
-            <p for="" class="fs-1-1 white--text text-justify">
-              Internet is the world audience.
-            </p>
-            <p for="" class="fs-1-1 white--text text-justify">
-              Donec scelerisque eros vel tellus tempor, quis iaculis orci
-              ultrices.
-            </p>
-            <p for="" class="fs-1-1 white--text text-justify">
-              Nunc volutpat nisi quis ligula congue, vitae eleifend risus
-              interdum.
-            </p>
-            <p for="" class="fs-1-1 white--text text-justify">
-              Curabitur quis ligula malesuada, ornare quam eget, interdum felis.
+            <p
+              for=""
+              class="fs-1-1 white--text text-justify"
+              v-for="(item, i) in quotes"
+              :key="i"
+            >
+              {{ item.phrase }}
             </p>
           </v-col>
         </v-row>
@@ -217,6 +187,48 @@
 <script>
 export default {
   data: () => ({
+    para: [
+      {
+        phrase:
+          'Developers evolve all the time. That a simple work of repetition is not possible.',
+      },
+      { phrase: 'Life is always a battle of resolve. ' },
+      { phrase: 'Big brains with no life ORGATE No brains with slack life. ' },
+      {
+        phrase:
+          'Nobody warns the world community that passwords cannot be used the same for every website you register, using the same password for sites you trust makes you become vulnerable from being hacked ',
+      },
+      {
+        phrase:
+          "Raise your hand if you've been coding while wathing or just listening to a movie or tv series ",
+      },
+      {
+        phrase:
+          'start sitting at what you need to  code the hardest part is bringing oneself to do it.',
+      },
+      { phrase: 'Maybe the only way to get good is practice.' },
+    ],
+    quotes: [
+      {
+        phrase: 'nothing ever go smoothly at the first time with programming ',
+      },
+      { phrase: 'Hard work is the sum of daily efforts. ' },
+      { phrase: 'Strength is built in weakness.  - sand chronicles ' },
+      {
+        phrase:
+          "Don't fight what we hate, save what we love  - star wars the last jedi. ",
+      },
+      { phrase: "Knowledge isn't always power, sometimes it is a burden ." },
+      { phrase: 'The future is Open.' },
+      { phrase: 'Faith in others is often misplaced' },
+      {
+        phrase:
+          'In web development it really necessary to learn from the best.',
+      },
+      {
+        phrase: ' Internet is the world audience.',
+      },
+    ],
     selectedItem: 0,
 
     links: [

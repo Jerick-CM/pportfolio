@@ -112,6 +112,7 @@ export default {
       { label: 'CONTACT' },
       { label: 'JOIN THE MOVEMENT' },
     ],
+
     model: 6,
     rounded: ['0', 'sm', 'md', 'lg', 'xl', 'pill', 'circle'],
   }),
