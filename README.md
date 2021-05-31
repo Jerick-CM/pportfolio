@@ -27,13 +27,20 @@
   git add .
   git commit -m "add nuxt for heroku"
   git push heroku
+
   
 ```
+## Existing heroku app add and push
 
+```bash
+
+  heroku git:remote -a jerickcmangalus
+  git push heroku
+
+```
 ## Test Website
 
 ```bash
-    # install dependencies
-   
-
+    # location
+   https://jerickcmangalus.herokuapp.com/
 ```
