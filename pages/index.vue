@@ -1,6 +1,6 @@
 <template>
   <v-container class="red pa-0 ma-0" fluid no-gutters>
-    <v-sheet min-height="" class="black">
+    <v-sheet min-height="10vh" class="black">
       <v-container class=""
         ><v-row no-gutters>
           <v-col cols="12" sm="12" lg="9" class="text-center"
@@ -55,7 +55,7 @@
         </v-row>
       </v-container>
     </v-sheet>
-    <v-sheet min-height="30vh" class="white">
+    <v-sheet min-height="" class="white">
       <v-container class="">
         <v-row no-gutters class="mt-5">
           <v-col cols="12" sm="12" lg="12">
@@ -110,7 +110,7 @@
         </v-row>
       </v-container>
     </v-sheet>
-    <v-sheet min-height="30vh" class="white">
+    <v-sheet min-height="10vh" class="white">
       <v-container class="">
         <v-row no-gutters class="mt-5">
           <v-col cols="12" sm="12" lg="12">
@@ -127,7 +127,7 @@
       </v-container>
     </v-sheet>
 
-    <v-sheet min-height="30vh" class="blue">
+    <v-sheet min-height="10vh" class="blue">
       <v-container class="">
         <v-row no-gutters class="mt-5">
           <v-col cols="12" sm="12" lg="4">
@@ -153,7 +153,7 @@
         </v-row> </v-container
     ></v-sheet>
 
-    <v-sheet min-height="" class="black">
+    <v-sheet min-height="10vh" class="black">
       <v-container class="">
         <v-row>
           <v-spacer class=""> </v-spacer>
