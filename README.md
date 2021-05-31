@@ -1,22 +1,39 @@
-# portfolio
+# portfolio app
 
-## Build Setup
+## Test Website
 
 ```bash
-# install dependencies
-$ npm install
+    # install dependencies
+    https://nuxt-app-frontend.herokuapp.com/
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-# pportfolio
-# pportfolio
+```bash
+  # heroku commands for deployment
+    heroku login
+    heroku create APPNAME
+    heroku buildpacks:set heroku/nodejs
+    heroku config:set NODE_ENV=production
+    heroku config:set NPM_CONFIG_PRODUCTION=false
+    heroku config:set HOST=0.0.0.0
+
+    add packege.json
+      "scripts": {
+        "heroku-postbuild": "npm run build"
+      }
+
+  cli
+
+  git add .
+  git commit -m "add nuxt for heroku"
+  git push heroku
+  
+```
+
+## Test Website
+
+```bash
+    # install dependencies
+   
+
+```

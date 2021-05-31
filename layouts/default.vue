@@ -2,9 +2,8 @@
   <v-app dark>
     <!-- <v-app-bar fixed app> </v-app-bar> -->
     <v-main>
-      <v-container fluid class="pa-0 ma-0 ">
         <nuxt />
-      </v-container>
+
     </v-main>
   </v-app>
 </template>
@@ -38,8 +37,27 @@ export default {
 </script>
 
 <style>
+
+.font-lulu {
+  font-family: 'Lulu', sans-serif;
+}
+.font-avenir {
+  font-family: 'Avenir', sans-serif;
+}
 .v-slide-group__content.v-tabs-bar__content {
     background-color: black;
+}
+.fs-0-7{
+  font-size: .7rem;
+}
+.fs-0-6{
+  font-size: .6rem;
+}
+.fs-0-5{
+  font-size: .5rem;
+}
+.fs-1{
+  font-size: 1rem;
 }
 .fs-1-1 {
   font-size: 1.1rem;
@@ -53,4 +71,8 @@ export default {
 .fs-1-4{
   font-size: 1.4rem;
 }
+.fs-3{
+  font-size: 3rem;
+}
+
 </style>
