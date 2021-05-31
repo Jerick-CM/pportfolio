@@ -3,6 +3,13 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    script: [
+      {
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+        'data-ad-client': 'ca-pub-3213536425475125',
+        async: true
+      }
+    ],
     titleTemplate: 'About Jerick C. Mangalus',
 
     // %s  = title:
@@ -39,11 +46,15 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    // '@nuxtjs/google-adsense',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
+//  'google-adsense': {
+//       id: 'ca-pub-3213536425475125'
+//     }
+//   }
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
