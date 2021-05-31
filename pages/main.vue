@@ -41,9 +41,7 @@
               <v-list dense>
                 <v-list-item-group v-model="selectedItem" color="primary">
                   <v-list-item v-for="(item, i) in links" :key="i">
-                    <!-- <v-list-item-icon>
-                      <v-icon v-text="item.icon"></v-icon>
-                    </v-list-item-icon> -->
+
                     <v-list-item-content>
                       <v-list-item-title
                         v-text="item.label"

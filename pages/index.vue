@@ -60,7 +60,14 @@
         <v-row no-gutters class="mt-5">
           <v-col cols="12" sm="12" lg="12">
             <v-layout justify-center align-center>
-              <v-avatar color="primary" size="375" class="text-center">
+              <v-avatar
+                color="primary"
+                :size="{
+                  '150': $vuetify.breakpoint.smAndDown,
+                  '375': $vuetify.breakpoint.mdAndUp,
+                }"
+                class="text-center"
+              >
                 <v-img
                   class="text-center"
                   src="/images/cartoon-darken.jpg"
@@ -244,9 +251,9 @@ export default {
 }
 </style>
 <style scoped>
-img {
+/* img {
   height: 100vh;
-}
+} */
 .text-justify {
   text-align: justify;
   text-justify: inter-word;
