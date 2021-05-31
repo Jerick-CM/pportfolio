@@ -61,13 +61,17 @@
           <v-col cols="12" sm="12" lg="12">
             <v-layout justify-center align-center>
               <v-avatar
-                color="primary"
-                :size="{
-                  '150': $vuetify.breakpoint.smAndDown,
-                  '350': $vuetify.breakpoint.mdAndUp,
-                }"
-                class="text-center"
+                :size="150"
+                class="text-center black"
+                v-if="$vuetify.breakpoint.smAndDown"
               >
+                <v-img
+                  class="text-center"
+                  src="/images/cartoon-darken.jpg"
+                ></v-img>
+              </v-avatar>
+
+              <v-avatar :size="350" class="text-center black" v-else>
                 <v-img
                   class="text-center"
                   src="/images/cartoon-darken.jpg"
@@ -100,7 +104,6 @@
               v-for="(item, i) in para"
               :key="i"
             >
-
               {{ item.phrase }}
             </p>
           </v-col>
